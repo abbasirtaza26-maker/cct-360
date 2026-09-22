@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; color: white; }
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.sunrise {
+  background-image: url('Images/Image%201.jpg');
+}
+
+.sunset {
+  background-image: url('Images/Image%202.jpg');
+}
+
+.night {
+  background-image: url('Images/Image%203.jpg');
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
