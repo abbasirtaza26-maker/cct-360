@@ -13,18 +13,18 @@ section {
   background-repeat: no-repeat;
 }
 
-
 .sunrise {
-  background-image: url('Images/Image%201.jpg');
+  background-image: url('images/Image%201.jpg');
 }
 
 .sunset {
-  background-image: url('Images/Image%202.jpg');
+  background-image: url('images/Image%202.jpg');
 }
 
 .night {
-  background-image: url('Images/Image%203.jpg');
+  background-image: url('images/Image%203.jpg');
 }
+
 
 h1 {
   font-size: 3rem;
