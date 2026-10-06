@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: white;
+}
+
+.story {
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+button {
+  margin: 1rem 0.5rem 0;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+p {
+  font-style: italic;
+  margin-top: 0.8rem;
+}
