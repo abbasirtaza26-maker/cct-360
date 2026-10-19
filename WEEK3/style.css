@@ -1,31 +1,72 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  padding: 2rem;
-  background: #1a1a1a;
+  padding: 2rem 1rem;
+  background: #0d1b2a;
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.story-select {
+  margin-bottom: 1.5rem;
+}
+
+.story-select button {
+  padding: 0.6rem 1rem;
+  margin: 0 0.4rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1px solid #333;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+.story-select button.active {
+  background: #333;
   color: white;
 }
 
-.story {
-  margin: 2rem auto;
-  max-width: 500px;
+h2 {
+  margin-bottom: 1rem;
 }
 
 img {
   width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
+  max-width: 700px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-button {
-  margin: 1rem 0.5rem 0;
-  padding: 0.5rem 1.2rem;
+#storyCaption {
+  font-size: 1.1rem;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+.controls button {
+  padding: 0.6rem 1.4rem;
+  margin: 0 0.4rem;
   font-size: 1rem;
   cursor: pointer;
 }
 
-p {
-  font-style: italic;
-  margin-top: 0.8rem;
+.hint {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }

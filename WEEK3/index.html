@@ -2,28 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Photo Carousel — Two Stories</title>
+<title>The Power of Sequencing</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <h1>The Power of Sequencing</h1>
+  <p class="subtitle">Same three pictures in two different orders tell two different stories.</p>
 
-  <section class="story">
-    <h2>Story 1: Enjoying the Coffee</h2>
-    <img id="img1" src="Images/IMAGE1.jpg" alt="Story 1 image">
-    <p id="caption1">Beginning: An empty cup, waiting to be filled.</p>
-    <button id="prev1">Previous</button>
-    <button id="next1">Next</button>
-  </section>
+  <div class="story-select">
+    <button id="selectStory1" class="active">Story 1: Going to the Movies</button>
+    <button id="selectStory2">Story 2: Coming Home from the Movies</button>
+  </div>
 
-  <section class="story">
-    <h2>Story 2: Making the Coffee</h2>
-    <img id="img2" src="Images/IMAGE3.jpg" alt="Story 2 image">
-    <p id="caption2">Beginning: A finished espresso, freshly made.</p>
-    <button id="prev2">Previous</button>
-    <button id="next2">Next</button>
-  </section>
+  <h2 id="storyTitle">Story 1: Going to the Movies</h2>
+
+  <img id="storyImg" src="Images/IMAGE1.jpg" alt="Story image">
+  <p id="storyCaption">Beginning: Thinking about a movie to watch.</p>
+
+  <div class="controls">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <p class="hint">Click Next, Previous, or the picture itself to move through the story.</p>
 
   <script src="script.js"></script>
 </body>
