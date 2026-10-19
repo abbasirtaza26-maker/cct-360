@@ -1,13 +1,13 @@
 const story1 = [
-  { src: "Images/IMAGE1.jpg", caption: "Beginning: Thinking about a movie to watch." },
-  { src: "Images/IMAGE2.jpg", caption: "Middle: Driving to the cinema." },
-  { src: "Images/IMAGE3.jpg", caption: "End: Watching the movie." }
+  { src: "IMAGES/IMAGE1.jpg", caption: "Beginning: Thinking about a movie to watch." },
+  { src: "IMAGES/IMAGE2.jpg", caption: "Middle: Driving to the cinema." },
+  { src: "IMAGES/IMAGE3.jpg", caption: "End: Watching the movie." }
 ];
 
 const story2 = [
-  { src: "Images/IMAGE3.jpg", caption: "Beginning: Watching the movie." },
-  { src: "Images/IMAGE2.jpg", caption: "Middle: Driving back home." },
-  { src: "Images/IMAGE1.jpg", caption: "End: Thinking about the movie I just watched." }
+  { src: "IMAGES/IMAGE3.jpg", caption: "Beginning: Watching the movie." },
+  { src: "IMAGES/IMAGE2.jpg", caption: "Middle: Driving back home." },
+  { src: "IMAGES/IMAGE1.jpg", caption: "End: Thinking about the movie I just watched." }
 ];
 
 let currentStory = story1;
