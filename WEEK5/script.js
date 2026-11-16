@@ -8,7 +8,7 @@ let starts = [0, 25, 50];
 let imageNumber = 0;
 let volumeLevel = 10;
 
-// ---------- SHOW ONE PICTURE (and its colour) ----------
+
 function showImage(number) {
   imageNumber = number;
   scene.style.backgroundImage = "url('" + images[imageNumber] + "')";
@@ -16,7 +16,7 @@ function showImage(number) {
   updateMessage();
 }
 
-// ---------- CONTROLS ----------
+
 function playAudio() {
   player.play();
 }
@@ -47,12 +47,12 @@ function volumeDown() {
   updateMessage();
 }
 
-// ---------- TEXT ----------
+
 function updateMessage() {
   message.innerHTML = "Picture " + (imageNumber + 1) + " of 3 | Volume: " + volumeLevel + "/10";
 }
 
-// ---------- THE SOUND CHANGES THE PICTURE ----------
+
 function playerProgressed() {
   let t = player.currentTime;
   if (t >= starts[2]) {
@@ -71,7 +71,7 @@ function playerEnded() {
 player.addEventListener("timeupdate", playerProgressed);
 player.addEventListener("ended", playerEnded);
 
-// ---------- THE PICTURE CHANGES THE SOUND ----------
+
 function nextImage() {
   let next = imageNumber + 1;
   if (next >= images.length) {
