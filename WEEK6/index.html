@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab 6: Where is the ISS?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Where is the ISS right now?</h1>
+<p>Live data from the International Space Station. Press the button to update.</p>
+
+<div id="map">
+  <img id="mapImage" src="images/image1.jpg" alt="World map">
+  <div id="dot"></div>
+</div>
+
+<p id="where">Loading...</p>
+<p id="daylight"></p>
+
+<div>
+  <p>Latitude: <span id="lat">-</span></p>
+  <p>Longitude: <span id="lon">-</span></p>
+  <p>Altitude (km): <span id="alt">-</span></p>
+  <p>Speed (km/h): <span id="speed">-</span></p>
+</div>
+
+<button onclick="loadISS()">Find the ISS</button>
+
+<script src="script.js"></script>
+</body>
+</html>
