@@ -2,13 +2,13 @@ let dot = document.getElementById("dot");
 let where = document.getElementById("where");
 let daylight = document.getElementById("daylight");
 
-// where the edges of your map are (measured from the map image)
+
 let mapLeft = -198;
 let mapRight = 218;
 let mapTop = 132;
 let mapBottom = -97;
 
-// ---------- GET THE LIVE DATA ----------
+
 function loadISS() {
   where.innerHTML = "Looking for the ISS...";
   fetch("https://api.wheretheiss.at/v1/satellites/25544")
@@ -23,7 +23,7 @@ function loadISS() {
     });
 }
 
-// ---------- USE THE DATA ----------
+
 function showData(data) {
   let lat = data.latitude;
   let lon = data.longitude;
@@ -33,13 +33,13 @@ function showData(data) {
   document.getElementById("alt").innerHTML = data.altitude;
   document.getElementById("speed").innerHTML = data.velocity;
 
-  // move the red square on the map
+  
   let x = (lon - mapLeft) / (mapRight - mapLeft) * 100;
   let y = (mapTop - lat) / (mapTop - mapBottom) * 100;
   dot.style.left = x + "%";
   dot.style.top = y + "%";
 
-  // sentence about where it is
+ 
   let north = "northern";
   if (lat < 0) {
     north = "southern";
@@ -50,7 +50,7 @@ function showData(data) {
   }
   where.innerHTML = "The ISS is over the " + north + " and " + east + " hemispheres.";
 
-  // colours change with day and night on the station
+
   if (data.visibility === "daylight") {
     document.body.style.backgroundColor = "#2a6f97";
     daylight.innerHTML = "It is daytime for the ISS right now.";
